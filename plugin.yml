@@ -1,0 +1,20 @@
+name: LeashCompass
+version: 1.0.0
+main: io.github.yourname.leashcompass.LeashCompassPlugin
+api-version: '26.2'
+author: YourName
+description: Compass magnet targeting players + leash-like constraint
+commands:
+  compassmagnet:
+    description: Magnetize the compass in your hand to a player
+    usage: /compassmagnet <player>
+    permission: leashcompass.magnet
+  leashtarget:
+    description: Attach a leash-like constraint to a player
+    usage: /leashtarget <player>
+    permission: leashcompass.leash
+permissions:
+  leashcompass.magnet:
+    default: op
+  leashcompass.leash:
+    default: op
